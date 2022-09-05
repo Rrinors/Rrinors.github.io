@@ -249,125 +249,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/05/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar2.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/09/05/test/" itemprop="url">test</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-09-05T14:26:24+08:00">
-                2022-09-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/05/P4396-AHOI2013-%E4%BD%9C%E4%B8%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -439,8 +320,7 @@
       
         
           
-            <p>update</p>
-<h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><p>给定一个长度为 $n$ ($n \leq 1e5$)  的序列 $a_n$ ($a_i\leq 1e5$)，$m$ ($m \leq 1e5$) 次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
+            <h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><p>给定一个长度为 $n$ ($n \leq 1e5$)  的序列 $a_n$ ($a_i\leq 1e5$)，$m$ ($m \leq 1e5$) 次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
 <h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组/线段树等数据结构维护区间，时间复杂度会变成 $O(n\sqrt m\log N)$，显然无法接受。</p>
 <p>朴素的想法，莫队的每次更新是 $O(1)$ 的，查询是 $O(N)$ 的。因为有 $n\sqrt m$ 次更新操作和 $m$ 次查询操作，显然更新比查询对复杂度的要求更苛刻。如果我们可以 $O(1)$ 地更新、$O(\sqrt N)$ 地查询，那么复杂度是可以接受的。</p>
 <p>值域分块可以做到这一点。由于是单点更新，显然可以在 $O(1)$ 的时间内完成对单点和块的更新，分块的查询是 $O(\sqrt N)$ 的，所以总复杂度为 $O(n\sqrt m+m\sqrt N)$。</p>
@@ -530,7 +410,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
