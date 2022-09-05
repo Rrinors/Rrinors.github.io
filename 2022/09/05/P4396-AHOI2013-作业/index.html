@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="题意给定一个长度为 $n$ ($n \leq 1e5$)  的序列 $a_n$ ($a_i\leq 1e5$)，$m$ ($m \leq 1e5$) 次询问，每次询问给定 l r a b，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。 思路容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组&#x2F;线段树等数据结构维护区间，时间">
+<meta name="description" content="题意给定一个长度为 $n$（$n \leq 100000$）的序列，$m$（$m \leq 100000$）次询问，每次询问给定 l r a b，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。 思路容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组&#x2F;线段树等数据结构维护区间，时间复杂度会变成 $O(n\sqrt m\lo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P4396 [AHOI2013] 作业">
 <meta property="og:url" content="http://example.com/2022/09/05/P4396-AHOI2013-%E4%BD%9C%E4%B8%9A/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="题意给定一个长度为 $n$ ($n \leq 1e5$)  的序列 $a_n$ ($a_i\leq 1e5$)，$m$ ($m \leq 1e5$) 次询问，每次询问给定 l r a b，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。 思路容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组&#x2F;线段树等数据结构维护区间，时间">
+<meta property="og:description" content="题意给定一个长度为 $n$（$n \leq 100000$）的序列，$m$（$m \leq 100000$）次询问，每次询问给定 l r a b，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。 思路容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组&#x2F;线段树等数据结构维护区间，时间复杂度会变成 $O(n\sqrt m\lo">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-09-05T06:26:24.000Z">
-<meta property="article:modified_time" content="2022-09-05T14:35:37.648Z">
+<meta property="article:modified_time" content="2022-09-05T15:05:36.583Z">
 <meta property="article:author" content="Rinors">
 <meta name="twitter:card" content="summary">
 
@@ -319,7 +319,7 @@
       
 
       
-        <h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><p>给定一个长度为 $n$ ($n \leq 1e5$)  的序列 $a_n$ ($a_i\leq 1e5$)，$m$ ($m \leq 1e5$) 次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
+        <h1 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h1><p>给定一个长度为 $n$（$n \leq 100000$）的序列，$m$（$m \leq 100000$）次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
 <h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组/线段树等数据结构维护区间，时间复杂度会变成 $O(n\sqrt m\log N)$，显然无法接受。</p>
 <p>朴素的想法，莫队的每次更新是 $O(1)$ 的，查询是 $O(N)$ 的。因为有 $n\sqrt m$ 次更新操作和 $m$ 次查询操作，显然更新比查询对复杂度的要求更苛刻。如果我们可以 $O(1)$ 地更新、$O(\sqrt N)$ 地查询，那么复杂度是可以接受的。</p>
 <p>值域分块可以做到这一点。由于是单点更新，显然可以在 $O(1)$ 的时间内完成对单点和块的更新，分块的查询是 $O(\sqrt N)$ 的，所以总复杂度为 $O(n\sqrt m+m\sqrt N)$。</p>
@@ -344,6 +344,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/09/05/P5047-Yuno-loves-sqrt-technology-II/" rel="prev" title="P5047 Yuno loves sqrt technology II">
+                P5047 Yuno loves sqrt technology II <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -421,7 +437,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
