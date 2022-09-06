@@ -79,15 +79,13 @@
 
 
 
-<meta name="description" content="给定一个长度为 $n$（$n\leq 100000$）的序列，$m$（$n\leq 100000$）次询问，每次询问给定 l r，查询区间 $[l,r]$ 内的逆序对数。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Luogu P5047 Yuno loves sqrt technology II">
 <meta property="og:url" content="http://example.com/2022/09/05/Luogu-P5047/index.html">
 <meta property="og:site_name" content="Rinors&#39;s blog">
-<meta property="og:description" content="给定一个长度为 $n$（$n\leq 100000$）的序列，$m$（$n\leq 100000$）次询问，每次询问给定 l r，查询区间 $[l,r]$ 内的逆序对数。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-09-05T14:56:14.000Z">
-<meta property="article:modified_time" content="2022-09-06T15:31:57.477Z">
+<meta property="article:modified_time" content="2022-09-06T15:49:16.195Z">
 <meta property="article:author" content="Rinors">
 <meta property="article:tag" content="莫队">
 <meta property="article:tag" content="莫队二次离线">
@@ -329,6 +327,10 @@
           
 
           
+              <div class="post-description">
+                  <!--more-->
+              </div>
+          
 
         </div>
       </header>
@@ -344,7 +346,6 @@
 
       
         <p>给定一个长度为 $n$（$n\leq 100000$）的序列，$m$（$n\leq 100000$）次询问，每次询问给定 <code>l r</code>，查询区间 $[l,r]$ 内的逆序对数。</p>
-<span id="more"></span>
 <h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p>先考虑暴力莫队的做法，每次更新时维护一个树状数组，这样做的复杂度为 $O(n\sqrt m\log n)$。我们以往遇到这样更新和查询不平衡的问题的时候，往往想到值域分块。但是此题显然没法像以前那样 $O(1)$ 更新，$O(\sqrt n)$ 查询，所以，我们希望能够优化更新的次数（$n\sqrt m$ 的更新次数显然不够优秀）。</p>
 <p>我们来分析莫队指针的移动。以右指针向右移动为例，当指针 $r$ 移动到 $r’$ 的位置时（此时左指针位于 $l$ 处），对贡献的增加值为 $\sum_{i=r}^{i=r’}f(l,i-1,i)$（其中 $f(l,r,x)$ 为 区间 $[l,r]$ 中比 $a[x]$ 大的数的个数）。这个值是可以差分的，即 $f(l,i-1,i)=f(1,i-1,i)-f(1,l-1,i)$。前面一项（被减数）非常容易预处理，用树状数组扫一遍即可，我们来考虑对后面一项的处理。</p>
 <p>由于莫队指针的移动最多有 $n\sqrt m$ 次，因此 $f(1,l-1,i)$ 最多会被计算 $n\sqrt m$ 次，我们需要找到一个在 $O(1)$ 时间内计算其值的方法。</p>
