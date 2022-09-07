@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="Rinors&#39;s blog">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-09-05T06:26:24.000Z">
-<meta property="article:modified_time" content="2022-09-07T02:04:25.363Z">
+<meta property="article:modified_time" content="2022-09-07T02:14:32.143Z">
 <meta property="article:author" content="Rinors">
 <meta property="article:tag" content="莫队">
 <meta property="article:tag" content="值域分块">
@@ -345,8 +345,8 @@
       
 
       
-        <p>给定一个长度为 $n$ 的序列 $a_n$，$m$ 次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
-<p>数据范围：$n,m\leq10^5$，$1\leq a_i\leq10^5$</p>
+        <h1 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h1><p>给定一个长度为 $n$ 的序列 $a_n$，$m$ 次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
+<h1 id="Constraints"><a href="#Constraints" class="headerlink" title="Constraints"></a>Constraints</h1><p>$n,m\leq10^5$，$1\leq a_i\leq10^5$。</p>
 <h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p>容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组/线段树等数据结构维护区间，时间复杂度会变成 $O(n\sqrt m\log N)$，显然无法接受。</p>
 <p>朴素的想法，莫队的每次更新是 $O(1)$ 的，查询是 $O(N)$ 的。因为有 $n\sqrt m$ 次更新操作和 $m$ 次查询操作，显然更新比查询对复杂度的要求更苛刻。如果我们可以 $O(1)$ 地更新、$O(\sqrt N)$ 地查询，那么复杂度是可以接受的。</p>
 <p>值域分块可以做到这一点。由于是单点更新，显然可以在 $O(1)$ 的时间内完成对单点和块的更新，分块的查询是 $O(\sqrt N)$ 的，所以总复杂度为 $O(n\sqrt m+m\sqrt N)$。</p>
@@ -527,7 +527,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Solution"><span class="nav-number">1.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">2.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Constraints"><span class="nav-number">2.</span> <span class="nav-text">Constraints</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
             
 
           </div>
