@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="Rinors&#39;s blog">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-09-06T14:56:49.000Z">
-<meta property="article:modified_time" content="2022-09-07T00:16:39.561Z">
+<meta property="article:modified_time" content="2022-09-07T02:07:29.790Z">
 <meta property="article:author" content="Rinors">
 <meta property="article:tag" content="树形dp">
 <meta property="article:tag" content="树链剖分">
@@ -347,7 +347,8 @@
       
 
       
-        <p>给定一棵 $n$ 个节点的树和树上的 $m$ 条树上路径（$n,m\leq10^5$），每条给定的路径都有一个价值。选择一些两两无交点的路径，使它们的价值之和最大。</p>
+        <p>给定一棵 $n$ 个节点的树和树上的 $m$ 条树上路径，每条给定的路径都有一个价值 $val$。选择一些两两无交点的路径，使它们的价值之和最大。</p>
+<p>数据范围：$n,m\leq10^5$，$0&lt;val&lt;10^3$</p>
 <h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p>考虑树形 dp，设 $dp[u]$ 为以 $u$ 为根子树中选取两两无交点的路径，价值和的最大值（路径全部在子树中），$sum[u]$ 为 $u$ 的所有儿子的 dp 值之和，即 $sum[u]=\sum_{v\in son(u)}dp[v]$。</p>
 <p>将题目钦定的路径保存在两个端点的 lca 上，每个节点的处理有两种情况：</p>
 <ol>
