@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="莫队,值域分块," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,16 +79,12 @@
 
 
 
-<meta property="og:type" content="article">
-<meta property="og:title" content="Luogu P4396 [AHOI2013] 作业">
-<meta property="og:url" content="http://example.com/2022/09/05/Luogu-P4396/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rinors&#39;s blog">
+<meta property="og:url" content="http://example.com/tags/%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/index.html">
 <meta property="og:site_name" content="Rinors&#39;s blog">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-09-05T06:26:24.000Z">
-<meta property="article:modified_time" content="2022-09-09T15:13:03.145Z">
 <meta property="article:author" content="Rinors">
-<meta property="article:tag" content="莫队">
-<meta property="article:tag" content="值域分块">
 <meta name="twitter:card" content="summary">
 
 
@@ -119,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2022/09/05/Luogu-P4396/"/>
+  <link rel="canonical" href="http://example.com/tags/启发式合并/"/>
 
 
 
 
 
-  <title>Luogu P4396 [AHOI2013] 作业 | Rinors's blog</title>
+  <title>标签: 启发式合并 | Rinors's blog</title>
   
 
 
@@ -144,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -272,191 +268,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>启发式合并<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/05/Luogu-P4396/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar2.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Rinors's blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2022/09/19/ICPC2021-%E4%B8%8A%E6%B5%B7-H/" itemprop="url">
+              
+                <span itemprop="name">ICPC2021 上海 H</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">Luogu P4396 [AHOI2013] 作业</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-09-05T14:26:24+08:00">
-                2022-09-05
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2022-09-19T11:04:43+08:00"
+              content="2022-09-19" >
+          09-19
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ACM/" itemprop="url" rel="index">
-                    <span itemprop="name">ACM</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ACM/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index">
-                    <span itemprop="name">题解</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-              <div class="post-description">
-                  <!--more-->
-              </div>
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h1><p>给定一个长度为 $n$ 的序列 $a_n$，$m$ 次询问，每次询问给定 <code>l r a b</code>，求区间 $[l,r]$ 内大于等于 $a$ 且小于等于 $b$ 的数的个数，以及满足条件的不同数字的种数。</p>
-<h1 id="Constraints"><a href="#Constraints" class="headerlink" title="Constraints"></a>Constraints</h1><p>$n,m\leq10^5$，$1\leq a_i\leq10^5$。</p>
-<h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><p>容易想到莫队，但是对于区间的统计，如果直接莫队的话，需要使用树状数组/线段树等数据结构维护区间，时间复杂度会变成 $O(n\sqrt m\log N)$，显然无法接受。</p>
-<p>朴素的想法，莫队的每次更新是 $O(1)$ 的，查询是 $O(N)$ 的。因为有 $n\sqrt m$ 次更新操作和 $m$ 次查询操作，显然更新比查询对复杂度的要求更苛刻。如果我们可以 $O(1)$ 地更新、$O(\sqrt N)$ 地查询，那么复杂度是可以接受的。</p>
-<p>值域分块可以做到这一点。由于是单点更新，显然可以在 $O(1)$ 的时间内完成对单点和块的更新，分块的查询是 $O(\sqrt N)$ 的，所以总复杂度为 $O(n\sqrt m+m\sqrt N)$。</p>
-<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N = <span class="number">100000</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n, m;</span><br><span class="line">    std::cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line"></span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">        std::cin &gt;&gt; a[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;std::array&lt;<span class="type">int</span>, 5&gt;&gt; <span class="built_in">Q</span>(m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; m; ++i) &#123;</span><br><span class="line">        std::cin &gt;&gt; Q[i][<span class="number">0</span>] &gt;&gt; Q[i][<span class="number">1</span>] &gt;&gt; Q[i][<span class="number">2</span>] &gt;&gt; Q[i][<span class="number">3</span>];</span><br><span class="line">        Q[i][<span class="number">4</span>] = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> len = std::<span class="built_in">sqrt</span>(n);</span><br><span class="line">    std::<span class="built_in">sort</span>(Q.<span class="built_in">begin</span>(), Q.<span class="built_in">end</span>(), [&amp;](<span class="keyword">auto</span> x, <span class="keyword">auto</span> y) &#123;</span><br><span class="line">        <span class="keyword">if</span> ((x[<span class="number">0</span>] - <span class="number">1</span>) / len != (y[<span class="number">0</span>] - <span class="number">1</span>) / len) <span class="keyword">return</span> x[<span class="number">0</span>] &lt; y[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">if</span> ((x[<span class="number">0</span>] - <span class="number">1</span>) / len &amp; <span class="number">1</span>) <span class="keyword">return</span> x[<span class="number">1</span>] &gt; y[<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">return</span> x[<span class="number">1</span>] &lt; y[<span class="number">1</span>];</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> siz = std::<span class="built_in">sqrt</span>(N);</span><br><span class="line">    <span class="type">int</span> num = (N + siz - <span class="number">1</span>) / siz;</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">st</span><span class="params">(num + <span class="number">1</span>)</span>, <span class="title">ed</span><span class="params">(num + <span class="number">1</span>)</span>, <span class="title">id</span><span class="params">(N + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= num; ++i) &#123;</span><br><span class="line">        st[i] = ed[i - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">        ed[i] = std::<span class="built_in">min</span>(st[i] + siz - <span class="number">1</span>, N);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = st[i]; j &lt;= ed[i]; ++j) &#123;</span><br><span class="line">            id[j] = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;std::pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; <span class="built_in">ans</span>(m);</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">cnt</span><span class="params">(N + <span class="number">1</span>)</span>, <span class="title">sum</span><span class="params">(num + <span class="number">1</span>)</span>, <span class="title">ap</span><span class="params">(num + <span class="number">1</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> add = [&amp;](<span class="type">int</span> x) &#123;</span><br><span class="line">        cnt[a[x]]++;</span><br><span class="line">        sum[id[a[x]]]++;</span><br><span class="line">        <span class="keyword">if</span> (cnt[a[x]] == <span class="number">1</span>) ap[id[a[x]]]++;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> del = [&amp;](<span class="type">int</span> x) &#123;</span><br><span class="line">        cnt[a[x]]--;</span><br><span class="line">        sum[id[a[x]]]--;</span><br><span class="line">        <span class="keyword">if</span> (cnt[a[x]] == <span class="number">0</span>) ap[id[a[x]]]--;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> query = [&amp;](<span class="type">int</span> fr, <span class="type">int</span> to) -&gt; std::pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; &#123;</span><br><span class="line">        <span class="type">int</span> res1 = <span class="number">0</span>, res2 = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = fr; i &lt;= std::<span class="built_in">min</span>(ed[id[fr]], to); ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (cnt[i]) res1 += cnt[i], res2++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (id[fr] != id[to]) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> i = std::<span class="built_in">max</span>(fr, st[id[to]]); i &lt;= to; ++i) &#123;</span><br><span class="line">                <span class="keyword">if</span> (cnt[i]) res1 += cnt[i], res2++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = id[fr] + <span class="number">1</span>; i &lt; id[to]; ++i) &#123;</span><br><span class="line">            res1 += sum[i];</span><br><span class="line">            res2 += ap[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123;res1, res2&#125;;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> l = <span class="number">1</span>, r = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> [ql, qr, fr, to, id] : Q) &#123;</span><br><span class="line">        <span class="keyword">while</span> (l &gt; ql) <span class="built_in">add</span>(--l);</span><br><span class="line">        <span class="keyword">while</span> (r &lt; qr) <span class="built_in">add</span>(++r);</span><br><span class="line">        <span class="keyword">while</span> (l &lt; ql) <span class="built_in">del</span>(l++);</span><br><span class="line">        <span class="keyword">while</span> (r &gt; qr) <span class="built_in">del</span>(r--);</span><br><span class="line">        ans[id] = <span class="built_in">query</span>(fr, to);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> [x, y] : ans) &#123;</span><br><span class="line">        std::cout &lt;&lt; x &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/%E8%8E%AB%E9%98%9F/" rel="tag"># 莫队</a>
-          
-            <a href="/tags/%E5%80%BC%E5%9F%9F%E5%88%86%E5%9D%97/" rel="tag"># 值域分块</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2022/09/05/Luogu-P5047/" rel="prev" title="Luogu P5047 Yuno loves sqrt technology II">
-                Luogu P5047 Yuno loves sqrt technology II <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -464,10 +323,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -488,17 +343,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -562,22 +408,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Description"><span class="nav-number">1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Constraints"><span class="nav-number">2.</span> <span class="nav-text">Constraints</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Solution"><span class="nav-number">3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
           
@@ -711,10 +541,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
